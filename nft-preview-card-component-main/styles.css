@@ -15,7 +15,8 @@ body {
     --cyan: rgb(0, 255, 247);
     --main-bg: hsl(217, 54%, 11%);
     --card-bg: hsl(216, 50%, 16%);
-    --line: hsl(215, 32%, 27%)
+    --line: hsl(215, 32%, 27%);
+    --transparent-cyan: rgba(0, 255, 247, 0.438);
 }
 
 .main-bg {
@@ -38,15 +39,22 @@ body {
     border-color: var(--line);
 }
 
+.equilibrium, .jules {
+    transition: color 350ms;
+}
+
 .equilibrium:hover, .jules:hover {
     color: var(--cyan);
     cursor: pointer;
 }
 
 .eye-div {
-    visibility: hidden;
+    opacity: 0;
+    background-color: var(--transparent-cyan);
+    transition: opacity 250ms;
 }
 
 .eye-div:hover {
-    visibility: visible;
+    opacity: 1;
+    cursor: pointer;
 }
