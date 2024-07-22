@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 18px;
+    font-family: "Outfit", sans-serif;
+}
+
+:root {
+    --blue: hsl(215, 51%, 70%);
+    --cyan: rgb(0, 255, 247);
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%)
+}
+
+.main-bg {
+    background-color: var(--main-bg);
+}
+
+.card-bg {
+    background-color: var(--card-bg);
+}
+
+.cyan {
+    color: var(--cyan);
+}
+
+.blue {
+    color: var(--blue);
+}
+
+.border-color {
+    border-color: var(--line);
+}
+
+.equilibrium:hover, .jules:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.eye-div {
+    visibility: hidden;
+}
+
+.eye-div:hover {
+    visibility: visible;
+}
