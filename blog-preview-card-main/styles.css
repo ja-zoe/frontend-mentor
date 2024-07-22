@@ -19,6 +19,14 @@ body {
     padding: 0;
 }
 
-.the-shadow {
-    box-shadow: 8px 8px black;
+.absolute {
+    transform: translate(10px, 10px);
+}
+
+.card {
+    transition: transform 0.2s ease; 
+}
+
+.card:hover {
+    transform: translate(10px, 10px);
 }
